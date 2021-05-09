@@ -1,0 +1,2 @@
+# PyCursed
+Python web framework
