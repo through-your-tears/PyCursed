@@ -23,7 +23,7 @@ class Session(BaseMiddleWare):
         request.extra['session_id'] = session_id
 
     def to_response(self, response: Response):
-        if not response.request.sessiion_id:
+        if not response.request.session_id:
             response.update_headers(
                 {'Set-Cookie': f'session_id{uuid4()}'}
             )
